@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <title>Page3</title>
+
+ <link rel="stylesheet" href="./css/page3.css">
+ <body>
+
+   <h1>Welcome to Countdown</h1>
+   Please follow the instructions in the box and watch the java script magic happen!
+
+    <div class= "website">
+<p>How many seconds would you like to set your alarm for?</p>
+<input id="seconds" value="" />
+<button onclick="countdown()">Click here</button>
+<p id="timer"></p>
+<script>
+function countdown() {
+   var seconds = document.getElementById("seconds").value; 
+   function tick() {
+         seconds = seconds - 1;
+	timer.innerHTML = seconds;
+	setTimeout(tick, 1000);
+	    if(seconds == -1){
+	        alert("Time's up!");
+	    }
+        } 
+    tick();
+}
+</script>
+</div>
+</body>
+</html>

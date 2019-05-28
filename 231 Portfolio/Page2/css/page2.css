@@ -1,0 +1,11 @@
+h1 {
+	color:#fff;
+	font-family:roboto;
+	font-weight:900;
+	text-transform:uppercase;
+}
+
+.website {
+	border: 1px red solid;
+	margin: 100 px;
+}
